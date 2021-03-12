@@ -8,29 +8,46 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity{
+import java.io.BufferedReader;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.net.Socket;
 
+public class MainActivity extends AppCompatActivity {
+
+    //from Interface
+    //private EditText studentID;
+    private TextView answerFromServer;
+    private Button btn;
     EditText studentID;
-    TextView answerFromServer;
-    Button btn;
+
+    // calling serverActivity;
+    ServerActivity serverActivity = new ServerActivity();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        studentID = (EditText) findViewById(R.id.input_Matrikelnummer);
+
+
         btn = findViewById(R.id.abschicken_Button);
         answerFromServer = findViewById(R.id.text_fromServer);
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int numb = Integer.valueOf(studentID.getText().toString());
-                String res = String.valueOf(numb);
-                answerFromServer.setText(res);
+                studentID = (EditText) findViewById(R.id.input_Matrikelnummer);
+                String str = studentID.getText().toString();
+                answerFromServer.setText((serverActivity.serverThread(str)));
+
             }
         });
-    }
+
+        }
+
 
 
 }
