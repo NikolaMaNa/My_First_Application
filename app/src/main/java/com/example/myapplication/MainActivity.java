@@ -31,8 +31,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
         btn = findViewById(R.id.abschicken_Button);
         answerFromServer = findViewById(R.id.text_fromServer);
 
@@ -47,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         }
+
 
 
 
