@@ -83,7 +83,7 @@
         app:layout_constraintVertical_bias="0.048" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/berechnen_Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="135dp"
@@ -97,7 +97,7 @@
         app:layout_constraintTop_toBottomOf="@+id/abschicken_Button" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/resultOfDivisor"
         android:layout_width="250dp"
         android:layout_height="75dp"
         android:layout_marginStart="83dp"
@@ -112,7 +112,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/berechnen_Button"
         app:layout_constraintVertical_bias="0.222" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
