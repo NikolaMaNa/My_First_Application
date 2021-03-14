@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <person>
+        <name>Nikola Manojlovic</name>
+        <matrikelnummer>1512855</matrikelnummer>
+        <lastcommithash>49ea5d61c3fe2edb01dce289cdb703850d359ba8</lastcommithash>
+        <githubusername>NikolaMaNa</githubusername>
+        <repositoryname>My_First_Application</repositoryname>
+        <repositoryurl>https://github.com/NikolaMaNa/My_First_Application.git</repositoryurl>
+    </person>
+</PreferenceScreen>
