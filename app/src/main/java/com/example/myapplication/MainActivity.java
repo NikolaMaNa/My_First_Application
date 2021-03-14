@@ -52,10 +52,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 answerFromServer.setText((serverActivity.serverThread(str)));
                 break;
             case R.id.berechnen_Button:
-
                 String[] arrayString = str.split("");
                 int[] arrayInt = converStringArrayToIntArray(arrayString);
                 result.setText(calculate(arrayInt));
+                break;
+            default:
+                answerFromServer.setText("Something went wrong!");
         }
     }
 
@@ -74,7 +76,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     else if (secondDividend == 0) {
                         secondDividend = i;
                         result ="First dividend at index: " + firstDividend + '\n' +
-                                "Second dividend at index: " + secondDividend;
+                                "Second dividend at index: " + secondDividend + '\n' +
+                                "Divisor: " + divisor;
                         count++;
                     }
                 }

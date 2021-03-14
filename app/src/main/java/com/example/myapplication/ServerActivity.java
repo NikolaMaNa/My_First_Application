@@ -32,7 +32,7 @@ public class ServerActivity extends AppCompatActivity {
                     retValue = in.readLine();
                     socket.close();
                 } catch (IOException e) {
-                    System.out.println("Doesn't work!");
+                    e.printStackTrace();
                     System.exit(-1);
                 }
             }
