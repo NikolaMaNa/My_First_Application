@@ -73,8 +73,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     if (firstDividend == 0) {firstDividend = i;}
                     else if (secondDividend == 0) {
                         secondDividend = i;
-                        result ="First dividend: " + firstDividend + '\n' +
-                                "Second dividend: " + secondDividend;
+                        result ="First dividend at index: " + firstDividend + '\n' +
+                                "Second dividend at index: " + secondDividend;
                         count++;
                     }
                 }
