@@ -55,13 +55,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 String[] arrayString = str.split("");
                 int[] arrayInt = converStringArrayToIntArray(arrayString);
-                result.setText(berechnen(arrayInt));
+                result.setText(calculate(arrayInt));
         }
     }
 
 
 
-    public String berechnen(int[] array) {
+    public String calculate(int[] array) {
         String result = "";
         int firstDividend = 0;
         int secondDividend = 0;
